@@ -1,8 +1,10 @@
-# Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+# Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
 
-letra = input('Digite uma letra:  ')
+letra = input("Digite uma letra:  ").lower()
 
-if letra in 'aeiou':
-    print(f'Vogal')
+if letra in 'f':
+    print('F - Feminino')
+elif letra in 'm':
+    print('M - Masculino')
 else:
-    print(f'Consoante')
+    print('Sexo Inválido')
